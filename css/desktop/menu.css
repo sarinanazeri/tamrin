@@ -1,0 +1,40 @@
+label[for="show"] {
+    display: none;
+}
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #2b2b2b;
+  position: unset;
+  right: unset;
+  border-radius: 0px 0px 5px 5px;
+  nav {
+    ul {
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      li {
+        width: fit-content;
+        transition: unset;
+        a {
+          transition: 700ms;
+          &:hover {
+            color:gold;
+          }
+        }
+        &:hover {
+          background-color: unset;
+        }
+      }
+    }
+  }
+  label[for="close"] {
+    display: none;
+  }
+}
+input#show:checked ~ header {
+  display: none;
+}
+input[type="radio"]{
+    display: none;
+}
